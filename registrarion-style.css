@@ -1,0 +1,163 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: #d071f9;
+    padding: 0 10px;
+}
+
+.container
+{
+    max-width: 500px;
+    width: 100;
+    background-color: white;
+    margin: 20px auto;
+    padding: 30px;
+    box-shadow:5px 5px 5px rgba(0, 0, 0, 0.5);  
+}
+
+.container .tital
+{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #d071f9;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.container .form
+{
+    width: 100%;
+}
+
+.container .form .input-filed
+{
+    margin: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.container .form .input-filed label
+{
+    width: 200px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.container .form .input-filed .input,
+.container .form .input-filed .textarea
+{
+    width: 100%;
+    outline: none;
+    border: 1px solid #d071f9;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 4px;
+    transition: all 0.5s ease;
+}
+
+.container .form .input-filed .textarea
+{
+    resize: none;
+    height: 70px;
+}
+
+.container .form .input-filed .custom-select
+{
+    position: relative;
+    width: 100%;
+    height: 38px;
+}
+
+.container .form .input-filed .custom-select select
+{
+    -webkit-appearance: none;
+    appearance: none;
+    padding: 8px 10px;
+    width: 100%;
+    height: 100;
+    outline: none;
+    border: 1px solid #d071f9;
+    border-radius: 4px;
+    color: black;
+}
+
+.container .form .input-filed .custom-select:before
+{
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    border: 8px solid black;
+    border-color: #d071f9 transparent transparent transparent;
+    pointer-events: none;
+}
+
+.container .form .input-filed .input:focus,
+.container .form .input-filed .textarea:focus
+{
+    border: 1px solid purple;
+}
+
+.container .form .input-filed p
+{
+    font-size: 14px
+    color: #757575;
+}
+
+.container .form .input-filed .check
+{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+.container .form .input-filed .btn
+{
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 0;
+    background: #d071f9;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    outline: none;
+}
+
+.container .form .input-filed:last-child
+{
+    margin-bottom: 0;
+}
+
+.container .form .input-filed .btn:hover
+{
+    background: purple;
+}
+
+@media (max-width: 420px)
+{
+    .container .form .input-filed
+    {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .container .form .input-filed label
+    {
+        margin-bottom: 5px;
+    }
+
+    .container .form .input-filed.term
+    {
+        flex-direction: row;
+    }
+}
